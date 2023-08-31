@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Isso faz com que o container ocupe toda a altura da tela */
+    font-family: 'Arial', sans-serif; /* Adicione uma fonte padrão para melhor visualização */
+    padding-top: 50px; /* Aumenta o espaçamento no topo */
+}
+
+.logo img {
+    max-width: 100%; /* Isso garante que a logo não ultrapasse o tamanho do container */
+    margin-bottom: 0px; /* Aumenta o espaçamento abaixo da logo */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+    font-size: 35px;
+    color: #4D4C4C; 
+    margin-bottom: 40px; 
+    margin-top: 10px;
+}
+
+.button.large {
+    padding: 10px 50px;
+    width: 149px;
+    height: 39px;
+    background-color: #E10E17;
+    color: white;
+    border: none;
+    border-radius: 16px;    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button.large:hover {
+    background-color: #C00D16;
+}
+
+.input {
+    width: 300px;
+    height: 20px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1.5px solid #E76553; /* Isso remove qualquer borda padrão que o input possa ter */
+    padding: 10px; /* Isso adiciona um pouco de espaço interno para o texto */
+    color: black; /* Isso define a cor do texto do input para branco */
+    font-family: 'Poppins', sans-serif; /* Se você quiser que o input use a fonte Poppins */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-bottom: 15px; /* Isso adiciona um espaço entre os campos de e-mail e senha */
+}
+
+.input::placeholder {
+    color: #aaa; /* Isso define a cor do texto de placeholder (como "E-mail" ou "Senha") para branco */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    position: relative;
+}
+
+.input-label {
+    position: absolute; /* Isso permite que posicionemos o label exatamente onde queremos */
+    background-color: white; /* Isso garante que o label tenha um fundo branco, cobrindo a borda do input */
+    padding: 0 5px; /* Isso adiciona um pouco de espaço ao redor do texto do label */
+    top: -10px; /* Isso move o label para cima, para que ele apareça fora do input */
+    left: 10px; /* Isso move o label um pouco para a direita, para que ele não fique exatamente na borda */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #191919; /* Isso define a cor do texto do label para #E76553 */
+}
+
+.input {
+    /* ... (outras propriedades) ... */
+    padding-top: 20px; /* Isso adiciona um espaço no topo do input, para que o texto digitado não fique por baixo do label */
+}
+
+.input-group:last-child {
+    margin-bottom: 40px; /* Aumenta o espaçamento abaixo do botão 'Entrar' */
+}
+
+.input-group:nth-child(2) { /* Se refere ao segundo .input-group, que é o campo "Senha" */
+    margin-bottom: 30px; /* Aumenta o espaçamento abaixo do campo "Senha" */
+}
+
+
+.forgot-password-link, .signup-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+    font-size: 14px;
+    color: #191919;
+    margin-bottom: 8px; /* Aumenta o espaçamento abaixo dos links */
+}
+
+.signup-text a {
+    color: #191919;
+    text-decoration: underline;
+}
+
+.signup-text a:hover {
+    color: #191919; /* Mantém a cor ao passar o mouse */
+}
+
+
