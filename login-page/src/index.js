@@ -1,23 +1,26 @@
 import React, { useState } from "react";
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./styles.css";
 
-const Login = () => {
+// Componente de Tela de Login
+const TelaLogin = () => {
+  // Estados para armazenar os valores dos campos de e-mail e senha
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [senha, setSenha] = useState("");
 
-  const handleSubmit = (e) => {
+  // Função para lidar com o envio do formulário
+  const enviarFormulario = (e) => {
     e.preventDefault();
-    console.log("Email:", email, "Password:", password);
+    console.log("Email:", email, "Senha:", senha);
   };
 
   return (
     <div className="container">
       <div className="logo">
-        <img src="/imagens/logoAmparo.png" alt="Amparo Logo" />
+        <img src="/imagens/logoAmparo.png" alt="Logo Amparo" />
       </div>
       <h1>Amparo</h1>
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form" onSubmit={enviarFormulario}>
         <div className="input-group">
           <label htmlFor="email" className="input-label">
             E-mail
@@ -31,35 +34,32 @@ const Login = () => {
           />
         </div>
         <div className="input-group">
-          <label htmlFor="password" className="input-label">
+          <label htmlFor="senha" className="input-label">
             Senha
           </label>
           <input
             type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            id="senha"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
             className="input"
           />
         </div>
-
         <div className="input-group">
-          <button type="submit" className="button large">
+          <button type="submit" className="botao grande">
             Entrar
           </button>
         </div>
       </form>
-      <a href="/forgot-password" className="forgot-password-link">
+      <a href="/esqueceu-senha" className="link-recuperar-senha">
         Esqueceu sua senha?
       </a>
-      <p className="signup-text">
-        Ainda não tem conta? <a href="/signup">Cadastre-se!</a>
+      <p className="texto-cadastro">
+        Ainda não tem conta? <a href="/cadastro">Cadastre-se!</a>
       </p>
     </div>
   );
 };
 
-const root = document.getElementById("root");
-const appRoot = createRoot(root);
-
-appRoot.render(<Login />);
+// Renderizando o componente TelaLogin no elemento com ID "root"
+ReactDOM.render(<TelaLogin />, document.getElementById("root"));
