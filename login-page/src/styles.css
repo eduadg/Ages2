@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
 /* Estilo geral do container principal */
 .container {
     display: flex;
@@ -18,7 +22,7 @@
 
 /* Estilo para o título principal */
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', select-Regular;
     font-weight: 600;
     font-size: 35px;
     color: #4D4C4C;
@@ -50,18 +54,135 @@ h1 {
 .input {
     width: 300px;
     height: 25px; /* Ajuste na altura para melhor visualização */
+    font-weight: 400;
     border-radius: 8px;
     background-color: white;
     border: 1.5px solid #E76553;
     padding: 10px;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    color: #191919;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+    
+    
+    /* Estilo geral do container principal */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Arial', sans-serif;
+        padding-top: 20px;
+        background-color: #f4f4f4; /* Adiciona uma cor de fundo suave */
+    }
+    
+    /* Estilo para a logo */
+    .logo img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Estilo para o título principal */
+    h1 {
+        font-family: 'Poppins', select-Regular;
+        font-weight: 600;
+        font-size: 35px;
+        color: #4D4C4C;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    
+    /* Estilo para o botão de Entrar */
+    .botao.grande {
+        padding: 10px 50px;
+        width: 149px;
+        height: 39px;
+        background-color: #E10E17;
+        color: white;
+        border: none;
+        border-radius: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .botao.grande:hover {
+        background-color: #C00D16;
+    }
+    
+    /* Estilo para os campos de input */
+    .input {
+        width: 300px;
+        height: 25px; /* Ajuste na altura para melhor visualização */
+        font-weight: 400;
+        border-radius: 8px;
+        background-color: white;
+        border: 1.5px solid #E76553;
+        padding: 10px;
+        color: #191919;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-style: normal;
+        margin-bottom: 15px;
+    }
+    
+    .input::placeholder {
+        color: #3edd0a;
+    }
+    
+    /* Estilo para os grupos de input */
+    .input-group {
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .input-label {
+        position: absolute;
+        background-color: white;
+        padding: 0 5px;
+        top: -10px;
+        left: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: #191919;
+    }
+    
+    /* Estilo para os links */
+    .link-recuperar-senha, .texto-cadastro {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #191919;
+        margin-bottom: 8px;
+        text-decoration: none; /* Remove o sublinhado padrão dos links */
+    }
+    
+    .link-recuperar-senha {
+        border-bottom: 1px solid #E10E17; /* Adiciona uma linha abaixo do link */
+        padding-bottom: 2px; /* Adiciona um pequeno espaço entre o texto e a linha */
+    }
+    
+    .texto-cadastro a {
+        color: #E10E17; /* Adiciona uma cor mais destacada para o link de cadastro */
+        text-decoration: underline;
+    }
+    
+    .texto-cadastro a:hover {
+        color: #C00D16;
+    }
+    
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
     margin-bottom: 15px;
 }
 
 .input::placeholder {
-    color: #aaa;
+    color: #3edd0a;
 }
 
 /* Estilo para os grupos de input */

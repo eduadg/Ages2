@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import Logo from './components/Logo';
 import FormularioLogin from './components/FormularioLogin';
 import LinksAuxiliares from './components/LinksAuxiliares';
@@ -15,5 +15,8 @@ const TelaLogin = () => (
   </div>
 );
 
-// Renderizando o componente TelaLogin no elemento com ID "root"
-ReactDOM.render(<TelaLogin />, document.getElementById("root"));
+// Utilizando a nova API createRoot do React 18
+const root = document.getElementById('root');
+const appRoot = createRoot(root);
+
+appRoot.render(<TelaLogin />);
